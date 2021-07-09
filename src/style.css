@@ -3,15 +3,14 @@
   background-color: white;
   height: 95px;
   width: 70px;
-  /* border-radius: 5px; */
+  border-radius: 5px;
   margin-right: 5px;
 }
 .card p {
   margin: 0;
 }
 .upcorner {
-  padding-left: 5px;
-  margin-left: 0;
+  text-align: left;
 }
 .bottomcorner {
   text-align: start;

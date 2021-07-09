@@ -2,7 +2,7 @@
 import "bootstrap";
 import "./style.css";
 
-let numero = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13];
+let numero = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"];
 let pinta = ["♥", "♦", "♠", "♣"];
 let arrayCard = [];
 let bigDiv = document.querySelector("#BigContainer");
@@ -23,7 +23,7 @@ function randomPinta() {
 }
 
 function DrawCards(numero, pinta) {
-  let divDraw = document.querySelector("#Draw");
+  let divDraw = document.querySelector("#Generate");
   let Class = "white";
   if (pinta == "♠" || pinta == "♣") {
     Class = "black";
@@ -98,7 +98,7 @@ function ordenarImprimir() {
         arrayCard[i][1] = arrayCard[i + 1][1];
         arrayCard[i + 1][0] = aux;
         arrayCard[i + 1][1] = auxS;
-        printBubble();
+        printBubble(arrayCard);
       }
       i++;
     }
